@@ -64,6 +64,7 @@ Partial Class Traveler_Info
         btnUpdateTraveler = New Button()
         btnFindRecord = New Button()
         btnDelete = New Button()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
         ' txtName
@@ -369,7 +370,7 @@ Partial Class Traveler_Info
         ' btnSaveTraveler
         ' 
         btnSaveTraveler.Location = New Point(139, 1351)
-        btnSaveTraveler.Margin = New Padding(5, 5, 5, 5)
+        btnSaveTraveler.Margin = New Padding(5)
         btnSaveTraveler.Name = "btnSaveTraveler"
         btnSaveTraveler.Size = New Size(287, 56)
         btnSaveTraveler.TabIndex = 36
@@ -379,7 +380,7 @@ Partial Class Traveler_Info
         ' btnUpdateTraveler
         ' 
         btnUpdateTraveler.Location = New Point(209, 1597)
-        btnUpdateTraveler.Margin = New Padding(5, 5, 5, 5)
+        btnUpdateTraveler.Margin = New Padding(5)
         btnUpdateTraveler.Name = "btnUpdateTraveler"
         btnUpdateTraveler.Size = New Size(190, 56)
         btnUpdateTraveler.TabIndex = 37
@@ -389,7 +390,7 @@ Partial Class Traveler_Info
         ' btnFindRecord
         ' 
         btnFindRecord.Location = New Point(128, 1510)
-        btnFindRecord.Margin = New Padding(5, 5, 5, 5)
+        btnFindRecord.Margin = New Padding(5)
         btnFindRecord.Name = "btnFindRecord"
         btnFindRecord.Size = New Size(289, 56)
         btnFindRecord.TabIndex = 38
@@ -405,11 +406,20 @@ Partial Class Traveler_Info
         btnDelete.Text = "Delete Record"
         btnDelete.UseVisualStyleBackColor = True
         ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(1091, 211)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(302, 49)
+        ComboBox1.TabIndex = 40
+        ' 
         ' Traveler_Info
         ' 
         AutoScaleDimensions = New SizeF(17F, 41F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1470, 1712)
+        Controls.Add(ComboBox1)
         Controls.Add(btnDelete)
         Controls.Add(btnFindRecord)
         Controls.Add(btnUpdateTraveler)
@@ -497,5 +507,6 @@ Partial Class Traveler_Info
     Friend WithEvents btnUpdateTraveler As Button
     Friend WithEvents btnFindRecord As Button
     Friend WithEvents btnDelete As Button
+    Friend WithEvents ComboBox1 As ComboBox
 
 End Class
