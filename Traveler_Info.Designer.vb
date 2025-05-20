@@ -409,7 +409,7 @@ Partial Class Traveler_Info
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(1091, 211)
+        ComboBox1.Location = New Point(977, 434)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(302, 49)
         ComboBox1.TabIndex = 40
