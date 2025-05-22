@@ -64,7 +64,8 @@ Partial Class Traveler_Info
         btnUpdateTraveler = New Button()
         btnFindRecord = New Button()
         btnDelete = New Button()
-        ComboBox1 = New ComboBox()
+        cbFrequentFlyerNumbers = New ComboBox()
+        btnFFN = New Button()
         SuspendLayout()
         ' 
         ' txtName
@@ -406,20 +407,30 @@ Partial Class Traveler_Info
         btnDelete.Text = "Delete Record"
         btnDelete.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox1
+        ' cbFrequentFlyerNumbers
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(977, 434)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(302, 49)
-        ComboBox1.TabIndex = 40
+        cbFrequentFlyerNumbers.FormattingEnabled = True
+        cbFrequentFlyerNumbers.Location = New Point(977, 434)
+        cbFrequentFlyerNumbers.Name = "cbFrequentFlyerNumbers"
+        cbFrequentFlyerNumbers.Size = New Size(302, 49)
+        cbFrequentFlyerNumbers.TabIndex = 40
+        ' 
+        ' btnFFN
+        ' 
+        btnFFN.Location = New Point(1008, 584)
+        btnFFN.Name = "btnFFN"
+        btnFFN.Size = New Size(188, 58)
+        btnFFN.TabIndex = 41
+        btnFFN.Text = "Add"
+        btnFFN.UseVisualStyleBackColor = True
         ' 
         ' Traveler_Info
         ' 
         AutoScaleDimensions = New SizeF(17F, 41F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1470, 1712)
-        Controls.Add(ComboBox1)
+        Controls.Add(btnFFN)
+        Controls.Add(cbFrequentFlyerNumbers)
         Controls.Add(btnDelete)
         Controls.Add(btnFindRecord)
         Controls.Add(btnUpdateTraveler)
@@ -507,6 +518,7 @@ Partial Class Traveler_Info
     Friend WithEvents btnUpdateTraveler As Button
     Friend WithEvents btnFindRecord As Button
     Friend WithEvents btnDelete As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbFrequentFlyerNumbers As ComboBox
+    Friend WithEvents btnFFN As Button
 
 End Class
