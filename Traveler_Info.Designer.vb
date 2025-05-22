@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Traveler_Info
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Traveler_Info
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         txtName = New TextBox()
@@ -334,7 +334,7 @@ Partial Class Traveler_Info
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
+        Label16.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
         Label16.Location = New Point(201, 30)
         Label16.Name = "Label16"
         Label16.Size = New Size(534, 89)
@@ -410,14 +410,14 @@ Partial Class Traveler_Info
         ' cbFrequentFlyerNumbers
         ' 
         cbFrequentFlyerNumbers.FormattingEnabled = True
-        cbFrequentFlyerNumbers.Location = New Point(977, 434)
+        cbFrequentFlyerNumbers.Location = New Point(1087, 357)
         cbFrequentFlyerNumbers.Name = "cbFrequentFlyerNumbers"
         cbFrequentFlyerNumbers.Size = New Size(302, 49)
         cbFrequentFlyerNumbers.TabIndex = 40
         ' 
         ' btnFFN
         ' 
-        btnFFN.Location = New Point(1008, 584)
+        btnFFN.Location = New Point(1153, 453)
         btnFFN.Name = "btnFFN"
         btnFFN.Size = New Size(188, 58)
         btnFFN.TabIndex = 41
@@ -426,7 +426,7 @@ Partial Class Traveler_Info
         ' 
         ' Traveler_Info
         ' 
-        AutoScaleDimensions = New SizeF(17F, 41F)
+        AutoScaleDimensions = New SizeF(17.0F, 41.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1470, 1712)
         Controls.Add(btnFFN)

@@ -194,6 +194,17 @@ Public Class Traveler_Info
         End If
     End Sub
 
+
+
+
+
+
+
+    Private Sub Traveler_Info_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtFrequentFlyer.MaxLength = 20 ' Or however long a FFN should be
+
+    End Sub
+
     Private Sub btnFFN_Click(sender As Object, e As EventArgs) Handles btnFFN.Click
         Dim ffNumber As String = txtFrequentFlyer.Text.Trim()
         Dim airline As String = txtAirline.Text.Trim()
@@ -219,12 +230,4 @@ Public Class Traveler_Info
         txtAirline.Focus()
     End Sub
 
-
-
-
-
-    Private Sub Traveler_Info_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtFrequentFlyer.MaxLength = 20 ' Or however long a FFN should be
-
-    End Sub
 End Class
