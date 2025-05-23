@@ -194,7 +194,7 @@
     End Sub
 
     Private Sub EditTripToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditTripToolStripMenuItem.Click
-
+        frmEditTrip.Show()
     End Sub
 
     Private Sub NewTripToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewTripToolStripMenuItem1.Click
