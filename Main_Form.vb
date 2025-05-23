@@ -166,6 +166,42 @@
     End Sub
 
     Private Sub NewTripToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewTripToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub LoadTripToolStripMenuItem1_DropDownOpening(sender As Object, e As EventArgs) Handles LoadTripToolStripMenuItem1.DropDownOpening
+        LoadTripToolStripMenuItem1.DropDownItems.Clear()
+
+        Using db As New TravelManagerContext()
+            Dim trips = db.Trip.OrderBy(Function(t) t.TripDate).ToList()
+
+            For Each trip In trips
+                Dim item As New ToolStripMenuItem(trip.TripName)
+                item.Tag = trip.TripID
+                AddHandler item.Click, AddressOf TripMenuItem_Click
+                LoadTripToolStripMenuItem1.DropDownItems.Add(item)
+            Next
+        End Using
+    End Sub
+
+    Private Sub TripMenuItem_Click(sender As Object, e As EventArgs)
+        Dim menuItem = CType(sender, ToolStripMenuItem)
+        Dim tripID = CInt(menuItem.Tag)
+
+        MessageBox.Show($"Trip selected: {menuItem.Text} (ID: {tripID})", "Trip Load")
+        ' You can now load or open a trip form here
+        lblTripName.Text = menuItem.Text
+    End Sub
+
+    Private Sub EditTripToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditTripToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub NewTripToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewTripToolStripMenuItem1.Click
         frmNewTrip.Show()
+    End Sub
+
+    Private Sub Main_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

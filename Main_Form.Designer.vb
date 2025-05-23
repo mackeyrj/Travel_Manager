@@ -82,7 +82,9 @@ Partial Class Main_Form
         AddAEDForeignCashToolStripMenuItem = New ToolStripMenuItem()
         SettingsToolStripMenuItem = New ToolStripMenuItem()
         NewTripToolStripMenuItem = New ToolStripMenuItem()
-        LoadTripToolStripMenuItem = New ToolStripMenuItem()
+        NewTripToolStripMenuItem1 = New ToolStripMenuItem()
+        LoadTripToolStripMenuItem1 = New ToolStripMenuItem()
+        EditTripToolStripMenuItem = New ToolStripMenuItem()
         TransportationToolStripMenuItem = New ToolStripMenuItem()
         TravelerInfoToolStripMenuItem = New ToolStripMenuItem()
         AddTravelerToolStripMenuItem = New ToolStripMenuItem()
@@ -554,11 +556,11 @@ Partial Class Main_Form
         ' mnuStrip
         ' 
         mnuStrip.ImageScalingSize = New Size(24, 24)
-        mnuStrip.Items.AddRange(New ToolStripItem() {MS_File, EditToolStripMenuItem, NewTripToolStripMenuItem, LoadTripToolStripMenuItem, TransportationToolStripMenuItem, TravelerInfoToolStripMenuItem, AboutToolStripMenuItem})
+        mnuStrip.Items.AddRange(New ToolStripItem() {MS_File, EditToolStripMenuItem, NewTripToolStripMenuItem, TransportationToolStripMenuItem, TravelerInfoToolStripMenuItem, AboutToolStripMenuItem})
         mnuStrip.Location = New Point(0, 0)
         mnuStrip.Name = "mnuStrip"
         mnuStrip.Padding = New Padding(10, 3, 0, 3)
-        mnuStrip.Size = New Size(2508, 54)
+        mnuStrip.Size = New Size(2508, 51)
         mnuStrip.TabIndex = 43
         mnuStrip.Text = "MenuStrip1"
         ' 
@@ -566,7 +568,7 @@ Partial Class Main_Form
         ' 
         MS_File.DropDownItems.AddRange(New ToolStripItem() {MS_File_Open, MS_File_Print, MS_File_Close})
         MS_File.Name = "MS_File"
-        MS_File.Size = New Size(87, 48)
+        MS_File.Size = New Size(87, 45)
         MS_File.Text = "File"
         ' 
         ' MS_File_Open
@@ -631,7 +633,7 @@ Partial Class Main_Form
         ' 
         EditToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddRJMUSCashToolStripMenuItem, AddAEDUSCashToolStripMenuItem, AddRJMForeignCashToolStripMenuItem, AddAEDForeignCashToolStripMenuItem, SettingsToolStripMenuItem})
         EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        EditToolStripMenuItem.Size = New Size(92, 48)
+        EditToolStripMenuItem.Size = New Size(92, 45)
         EditToolStripMenuItem.Text = "Edit"
         ' 
         ' AddRJMUSCashToolStripMenuItem
@@ -666,27 +668,40 @@ Partial Class Main_Form
         ' 
         ' NewTripToolStripMenuItem
         ' 
+        NewTripToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {NewTripToolStripMenuItem1, LoadTripToolStripMenuItem1, EditTripToolStripMenuItem})
         NewTripToolStripMenuItem.Name = "NewTripToolStripMenuItem"
-        NewTripToolStripMenuItem.Size = New Size(158, 48)
-        NewTripToolStripMenuItem.Text = "New Trip"
+        NewTripToolStripMenuItem.Size = New Size(90, 45)
+        NewTripToolStripMenuItem.Text = "Trip"
         ' 
-        ' LoadTripToolStripMenuItem
+        ' NewTripToolStripMenuItem1
         ' 
-        LoadTripToolStripMenuItem.Name = "LoadTripToolStripMenuItem"
-        LoadTripToolStripMenuItem.Size = New Size(163, 48)
-        LoadTripToolStripMenuItem.Text = "Load Trip"
+        NewTripToolStripMenuItem1.Name = "NewTripToolStripMenuItem1"
+        NewTripToolStripMenuItem1.Size = New Size(448, 54)
+        NewTripToolStripMenuItem1.Text = "New Trip"
+        ' 
+        ' LoadTripToolStripMenuItem1
+        ' 
+        LoadTripToolStripMenuItem1.Name = "LoadTripToolStripMenuItem1"
+        LoadTripToolStripMenuItem1.Size = New Size(448, 54)
+        LoadTripToolStripMenuItem1.Text = "Load Trip"
+        ' 
+        ' EditTripToolStripMenuItem
+        ' 
+        EditTripToolStripMenuItem.Name = "EditTripToolStripMenuItem"
+        EditTripToolStripMenuItem.Size = New Size(448, 54)
+        EditTripToolStripMenuItem.Text = "Edit Trip"
         ' 
         ' TransportationToolStripMenuItem
         ' 
         TransportationToolStripMenuItem.Name = "TransportationToolStripMenuItem"
-        TransportationToolStripMenuItem.Size = New Size(233, 48)
+        TransportationToolStripMenuItem.Size = New Size(233, 45)
         TransportationToolStripMenuItem.Text = "Transportation"
         ' 
         ' TravelerInfoToolStripMenuItem
         ' 
         TravelerInfoToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddTravelerToolStripMenuItem, EditTravelerToolStripMenuItem, DeleteTraverToolStripMenuItem})
         TravelerInfoToolStripMenuItem.Name = "TravelerInfoToolStripMenuItem"
-        TravelerInfoToolStripMenuItem.Size = New Size(143, 48)
+        TravelerInfoToolStripMenuItem.Size = New Size(143, 45)
         TravelerInfoToolStripMenuItem.Text = "Traveler"
         ' 
         ' AddTravelerToolStripMenuItem
@@ -710,7 +725,7 @@ Partial Class Main_Form
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(124, 48)
+        AboutToolStripMenuItem.Size = New Size(124, 45)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' scBeginingCash
@@ -735,7 +750,7 @@ Partial Class Main_Form
         scBeginingCash.Panel2.Controls.Add(lblBeginFrnRJM)
         scBeginingCash.Panel2.Controls.Add(lblBCForeignCashTraveler1)
         scBeginingCash.Size = New Size(1306, 246)
-        scBeginingCash.SplitterDistance = 638
+        scBeginingCash.SplitterDistance = 637
         scBeginingCash.SplitterWidth = 7
         scBeginingCash.TabIndex = 44
         ' 
@@ -761,7 +776,7 @@ Partial Class Main_Form
         scCurrentCash.Panel2.Controls.Add(lblCurrentFRNRJM)
         scCurrentCash.Panel2.Controls.Add(lblCCForeignCashTraveler1)
         scCurrentCash.Size = New Size(1306, 246)
-        scCurrentCash.SplitterDistance = 654
+        scCurrentCash.SplitterDistance = 653
         scCurrentCash.SplitterWidth = 7
         scCurrentCash.TabIndex = 45
         ' 
@@ -788,9 +803,9 @@ Partial Class Main_Form
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(1162, 1242)
+        Button1.Location = New Point(1163, 1241)
         Button1.Name = "Button1"
-        Button1.Size = New Size(188, 58)
+        Button1.Size = New Size(189, 57)
         Button1.TabIndex = 48
         Button1.Text = "Button1"
         Button1.UseVisualStyleBackColor = True
@@ -915,7 +930,6 @@ Partial Class Main_Form
     Friend WithEvents scBeginingCash As SplitContainer
     Friend WithEvents scCurrentCash As SplitContainer
     Friend WithEvents lblTripName As Label
-    Friend WithEvents LoadTripToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewTripToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCreditTransaction As Button
     Friend WithEvents TransportationToolStripMenuItem As ToolStripMenuItem
@@ -924,6 +938,9 @@ Partial Class Main_Form
     Friend WithEvents EditTravelerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DeleteTraverToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button1 As Button
+    Friend WithEvents NewTripToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents LoadTripToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents EditTripToolStripMenuItem As ToolStripMenuItem
 
 End Class
 

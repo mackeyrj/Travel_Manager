@@ -121,5 +121,7 @@
         Next
     End Sub
 
+    Private Sub btnEditTrip_Click(sender As Object, e As EventArgs)
 
+    End Sub
 End Class

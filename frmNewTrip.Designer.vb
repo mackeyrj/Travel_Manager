@@ -37,8 +37,6 @@ Partial Class frmNewTrip
         btnCreateTrip = New Button()
         btnCancel = New Button()
         dgvTravelMethods = New DataGridView()
-        cbTravelMethodType = New ComboBox()
-        btnAddTravelMethod = New Button()
         MethodType = New DataGridViewTextBoxColumn()
         Carrier = New DataGridViewTextBoxColumn()
         DepartureLocation = New DataGridViewTextBoxColumn()
@@ -48,121 +46,138 @@ Partial Class frmNewTrip
         DepartureDate = New DataGridViewTextBoxColumn()
         ArrivalDate = New DataGridViewTextBoxColumn()
         Notes = New DataGridViewTextBoxColumn()
+        cbTravelMethodType = New ComboBox()
+        btnAddTravelMethod = New Button()
         CType(dgvTravelMethods, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(95, 152)
+        Label1.Location = New Point(46, 113)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(153, 41)
+        Label1.Size = New Size(92, 25)
         Label1.TabIndex = 0
         Label1.Text = "Trip Name"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(112, 226)
+        Label2.Location = New Point(56, 158)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(136, 41)
+        Label2.Size = New Size(82, 25)
         Label2.TabIndex = 1
         Label2.Text = "Trip Date"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(23, 311)
+        Label3.Location = New Point(374, 117)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(225, 41)
+        Label3.Size = New Size(135, 25)
         Label3.TabIndex = 2
         Label3.Text = "Trip Destination"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(105, 412)
+        Label4.Location = New Point(22, 212)
+        Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(143, 41)
+        Label4.Size = New Size(86, 25)
         Label4.TabIndex = 3
         Label4.Text = "Traveler 1"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(105, 503)
+        Label5.Location = New Point(358, 207)
+        Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(143, 41)
+        Label5.Size = New Size(86, 25)
         Label5.TabIndex = 4
         Label5.Text = "Traveler 2"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(85, 594)
+        Label6.Location = New Point(829, 51)
+        Label6.Margin = New Padding(2, 0, 2, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(163, 41)
+        Label6.Size = New Size(98, 25)
         Label6.TabIndex = 5
         Label6.Text = "Trip Details"
         ' 
         ' txtTripName
         ' 
-        txtTripName.Location = New Point(290, 146)
+        txtTripName.Location = New Point(161, 109)
+        txtTripName.Margin = New Padding(2)
         txtTripName.Name = "txtTripName"
-        txtTripName.Size = New Size(250, 47)
+        txtTripName.Size = New Size(149, 31)
         txtTripName.TabIndex = 6
         ' 
         ' txtTripDate
         ' 
-        txtTripDate.Location = New Point(290, 220)
+        txtTripDate.Location = New Point(161, 154)
+        txtTripDate.Margin = New Padding(2)
         txtTripDate.Name = "txtTripDate"
-        txtTripDate.Size = New Size(250, 47)
+        txtTripDate.Size = New Size(149, 31)
         txtTripDate.TabIndex = 7
         ' 
         ' txtTripDestination
         ' 
-        txtTripDestination.Location = New Point(290, 305)
+        txtTripDestination.Location = New Point(531, 113)
+        txtTripDestination.Margin = New Padding(2)
         txtTripDestination.Name = "txtTripDestination"
-        txtTripDestination.Size = New Size(250, 47)
+        txtTripDestination.Size = New Size(149, 31)
         txtTripDestination.TabIndex = 8
         ' 
         ' txtTripDetails
         ' 
-        txtTripDetails.Location = New Point(290, 588)
+        txtTripDetails.Location = New Point(950, 48)
+        txtTripDetails.Margin = New Padding(2)
+        txtTripDetails.Multiline = True
         txtTripDetails.Name = "txtTripDetails"
-        txtTripDetails.Size = New Size(250, 47)
+        txtTripDetails.Size = New Size(646, 164)
         txtTripDetails.TabIndex = 9
         ' 
         ' cbTraveler1
         ' 
         cbTraveler1.FormattingEnabled = True
-        cbTraveler1.Location = New Point(290, 395)
+        cbTraveler1.Location = New Point(131, 202)
+        cbTraveler1.Margin = New Padding(2)
         cbTraveler1.Name = "cbTraveler1"
-        cbTraveler1.Size = New Size(302, 49)
+        cbTraveler1.Size = New Size(179, 33)
         cbTraveler1.TabIndex = 10
         ' 
         ' cbTraveler2
         ' 
         cbTraveler2.FormattingEnabled = True
-        cbTraveler2.Location = New Point(290, 495)
+        cbTraveler2.Location = New Point(467, 202)
+        cbTraveler2.Margin = New Padding(2)
         cbTraveler2.Name = "cbTraveler2"
-        cbTraveler2.Size = New Size(302, 49)
+        cbTraveler2.Size = New Size(179, 33)
         cbTraveler2.TabIndex = 11
         ' 
         ' btnCreateTrip
         ' 
-        btnCreateTrip.Location = New Point(46, 903)
+        btnCreateTrip.Location = New Point(27, 551)
+        btnCreateTrip.Margin = New Padding(2)
         btnCreateTrip.Name = "btnCreateTrip"
-        btnCreateTrip.Size = New Size(188, 58)
+        btnCreateTrip.Size = New Size(111, 35)
         btnCreateTrip.TabIndex = 12
         btnCreateTrip.Text = "Create Trip"
         btnCreateTrip.UseVisualStyleBackColor = True
         ' 
         ' btnCancel
         ' 
-        btnCancel.Location = New Point(329, 903)
+        btnCancel.Location = New Point(27, 666)
+        btnCancel.Margin = New Padding(2)
         btnCancel.Name = "btnCancel"
-        btnCancel.Size = New Size(188, 58)
+        btnCancel.Size = New Size(111, 35)
         btnCancel.TabIndex = 13
         btnCancel.Text = "Cancel"
         btnCancel.UseVisualStyleBackColor = True
@@ -171,28 +186,12 @@ Partial Class frmNewTrip
         ' 
         dgvTravelMethods.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvTravelMethods.Columns.AddRange(New DataGridViewColumn() {MethodType, Carrier, DepartureLocation, ArrivalLocation, DepartureTime, ArrivalTime, DepartureDate, ArrivalDate, Notes})
-        dgvTravelMethods.Location = New Point(611, 289)
+        dgvTravelMethods.Location = New Point(11, 262)
+        dgvTravelMethods.Margin = New Padding(2)
         dgvTravelMethods.Name = "dgvTravelMethods"
         dgvTravelMethods.RowHeadersWidth = 102
-        dgvTravelMethods.Size = New Size(2373, 375)
+        dgvTravelMethods.Size = New Size(2358, 229)
         dgvTravelMethods.TabIndex = 20
-        ' 
-        ' cbTravelMethodType
-        ' 
-        cbTravelMethodType.FormattingEnabled = True
-        cbTravelMethodType.Location = New Point(1150, 147)
-        cbTravelMethodType.Name = "cbTravelMethodType"
-        cbTravelMethodType.Size = New Size(302, 49)
-        cbTravelMethodType.TabIndex = 21
-        ' 
-        ' btnAddTravelMethod
-        ' 
-        btnAddTravelMethod.Location = New Point(1536, 153)
-        btnAddTravelMethod.Name = "btnAddTravelMethod"
-        btnAddTravelMethod.Size = New Size(188, 58)
-        btnAddTravelMethod.TabIndex = 22
-        btnAddTravelMethod.Text = "Add Travel Method"
-        btnAddTravelMethod.UseVisualStyleBackColor = True
         ' 
         ' MethodType
         ' 
@@ -257,11 +256,30 @@ Partial Class frmNewTrip
         Notes.Name = "Notes"
         Notes.Width = 250
         ' 
+        ' cbTravelMethodType
+        ' 
+        cbTravelMethodType.FormattingEnabled = True
+        cbTravelMethodType.Location = New Point(40, 46)
+        cbTravelMethodType.Margin = New Padding(2)
+        cbTravelMethodType.Name = "cbTravelMethodType"
+        cbTravelMethodType.Size = New Size(237, 33)
+        cbTravelMethodType.TabIndex = 21
+        ' 
+        ' btnAddTravelMethod
+        ' 
+        btnAddTravelMethod.Location = New Point(304, 44)
+        btnAddTravelMethod.Margin = New Padding(2)
+        btnAddTravelMethod.Name = "btnAddTravelMethod"
+        btnAddTravelMethod.Size = New Size(204, 35)
+        btnAddTravelMethod.TabIndex = 22
+        btnAddTravelMethod.Text = "Add Travel Method"
+        btnAddTravelMethod.UseVisualStyleBackColor = True
+        ' 
         ' frmNewTrip
         ' 
-        AutoScaleDimensions = New SizeF(17F, 41F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(2971, 1531)
+        ClientSize = New Size(2392, 934)
         Controls.Add(btnAddTravelMethod)
         Controls.Add(cbTravelMethodType)
         Controls.Add(dgvTravelMethods)
@@ -279,6 +297,7 @@ Partial Class frmNewTrip
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
+        Margin = New Padding(2)
         Name = "frmNewTrip"
         Text = "frmNewTrip"
         CType(dgvTravelMethods, ComponentModel.ISupportInitialize).EndInit()
