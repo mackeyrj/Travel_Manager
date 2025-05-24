@@ -187,53 +187,42 @@ Public Class Main_Form
     End Sub
 
     Private Sub TripMenuItem_Click(sender As Object, e As EventArgs)
-        Using db As New TravelManagerContext()
-            Dim tripNames = db.Trip.Select(Function(t) t.TripName).ToList()
+        Dim item = TryCast(sender, ToolStripMenuItem)
+        If item Is Nothing Then Exit Sub
 
-            If tripNames.Count = 0 Then
-                MessageBox.Show("No trips found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Return
-            End If
+        Dim selectedTripName As String = item.Text
 
-            Dim list As String = String.Join(Environment.NewLine, tripNames)
-            Dim input As String = InputBox("Available Trips:" & Environment.NewLine & list & vbNewLine & vbNewLine & "Enter the trip name exactly:", "Select Trip")
+        ' Proceed with initializing the trip directly
+        TripExpenseHelper.InitializeTripExpenseForm(
+            selectedTripName,
+            lblTripName,
+            rbtTraveler1,
+            rbtTraveler2,
+            rbtUSCurrency,
+            rbtForeignCurrency,
+            txtLocation,
+            cbRecipient,
+            cbMerchantDetail,
+            txtDescription,
+            txtAmount,
+            lblBCUSCashTraveler1,
+            lblBCUSCashTraveler2,
+            lblBCForeignCashTraveler1,
+            lblBCForeignCashTraveler2,
+            lblCCUSCashTraveler1,
+            lblCCUSCashTraveler2,
+            lblCCForeignCashTraveler1,
+            lblCCForeignCashTraveler2,
+            lblBeginUSTraveler1,
+            lblBeginUSTraveler2,
+            lblBeginFrnrTaveler1,
+            lblBeginFrnTraveler2,
+            lblCurrentUSTraveler1,
+            lblCurrentUSTraveler2,
+            lblCurrentFRNTraveler1,
+            lblCurrentFrnTraveler2
+               )
 
-            If String.IsNullOrWhiteSpace(input) OrElse Not tripNames.Contains(input) Then
-                MessageBox.Show("Invalid or missing trip name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Return
-            End If
-
-            ' Proceed with initializing the trip
-            TripExpenseHelper.InitializeTripExpenseForm(
-                input,
-        lblTripName,
-        rbtTraveler1,
-        rbtTraveler2,
-        rbtUSCurrency,
-        rbtForeignCurrency,
-        txtLocation,
-        cbRecipient,
-        cbMerchantDetail,
-        txtDescription,
-        txtAmount,
-        lblBCUSCashTraveler1,
-        lblBCUSCashTraveler2,
-        lblBCForeignCashTraveler1,
-        lblBCForeignCashTraveler2,
-        lblCCUSCashTraveler1,
-        lblCCUSCashTraveler2,
-        lblCCForeignCashTraveler1,
-        lblCCForeignCashTraveler2,
-        lblBeginUSTraveler1,
-        lblBeginUSTraveler2,
-        lblBeginFrnrTaveler1,
-        lblBeginFrnTraveler2,
-        lblCurrentUSTraveler1,
-        lblCurrentUSTraveler2,
-        lblCurrentFRNTraveler1,
-        lblCurrentFrnTraveler2
-           )
-        End Using
     End Sub
 
     Private Sub EditTripToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditTripToolStripMenuItem.Click
@@ -252,5 +241,7 @@ Public Class Main_Form
 
     End Sub
 
+    Private Sub lblTripName_Click(sender As Object, e As EventArgs) Handles lblTripName.Click
 
+    End Sub
 End Class

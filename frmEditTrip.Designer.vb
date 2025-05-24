@@ -38,101 +38,112 @@ Partial Class frmEditTrip
         ' cbTripName
         ' 
         cbTripName.FormattingEnabled = True
-        cbTripName.Location = New Point(276, 105)
+        cbTripName.Location = New Point(162, 64)
+        cbTripName.Margin = New Padding(2, 2, 2, 2)
         cbTripName.Name = "cbTripName"
-        cbTripName.Size = New Size(605, 49)
+        cbTripName.Size = New Size(358, 33)
         cbTripName.TabIndex = 0
         ' 
         ' btnEdit
         ' 
-        btnEdit.Location = New Point(95, 662)
+        btnEdit.Location = New Point(56, 404)
+        btnEdit.Margin = New Padding(2, 2, 2, 2)
         btnEdit.Name = "btnEdit"
-        btnEdit.Size = New Size(188, 58)
+        btnEdit.Size = New Size(111, 35)
         btnEdit.TabIndex = 1
         btnEdit.Text = "Edit"
         btnEdit.UseVisualStyleBackColor = True
         ' 
         ' txtTripDate
         ' 
-        txtTripDate.Location = New Point(276, 229)
+        txtTripDate.Location = New Point(162, 140)
+        txtTripDate.Margin = New Padding(2, 2, 2, 2)
         txtTripDate.Name = "txtTripDate"
-        txtTripDate.Size = New Size(605, 47)
+        txtTripDate.Size = New Size(358, 31)
         txtTripDate.TabIndex = 3
         ' 
         ' txtTripDestination
         ' 
-        txtTripDestination.Location = New Point(276, 347)
+        txtTripDestination.Location = New Point(162, 212)
+        txtTripDestination.Margin = New Padding(2, 2, 2, 2)
         txtTripDestination.Name = "txtTripDestination"
-        txtTripDestination.Size = New Size(605, 47)
+        txtTripDestination.Size = New Size(358, 31)
         txtTripDestination.TabIndex = 4
         ' 
         ' txtTripDetails
         ' 
-        txtTripDetails.Location = New Point(276, 464)
+        txtTripDetails.Location = New Point(162, 283)
+        txtTripDetails.Margin = New Padding(2, 2, 2, 2)
         txtTripDetails.Multiline = True
         txtTripDetails.Name = "txtTripDetails"
-        txtTripDetails.Size = New Size(605, 155)
+        txtTripDetails.Size = New Size(358, 96)
         txtTripDetails.TabIndex = 5
         ' 
         ' jlblTripName
         ' 
         jlblTripName.AutoSize = True
-        jlblTripName.Location = New Point(105, 113)
+        jlblTripName.Location = New Point(62, 69)
+        jlblTripName.Margin = New Padding(2, 0, 2, 0)
         jlblTripName.Name = "jlblTripName"
-        jlblTripName.Size = New Size(97, 41)
+        jlblTripName.Size = New Size(59, 25)
         jlblTripName.TabIndex = 6
         jlblTripName.Text = "Name"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(122, 235)
+        Label2.Location = New Point(72, 143)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(80, 41)
+        Label2.Size = New Size(49, 25)
         Label2.TabIndex = 7
         Label2.Text = "Date"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(33, 353)
+        Label3.Location = New Point(19, 215)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(169, 41)
+        Label3.Size = New Size(102, 25)
         Label3.TabIndex = 8
         Label3.Text = "Destination"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(95, 464)
+        Label4.Location = New Point(56, 283)
+        Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(107, 41)
+        Label4.Size = New Size(65, 25)
         Label4.TabIndex = 9
         Label4.Text = "Details"
         ' 
         ' btnCancel
         ' 
-        btnCancel.Location = New Point(382, 662)
+        btnCancel.Location = New Point(225, 404)
+        btnCancel.Margin = New Padding(2, 2, 2, 2)
         btnCancel.Name = "btnCancel"
-        btnCancel.Size = New Size(188, 58)
+        btnCancel.Size = New Size(111, 35)
         btnCancel.TabIndex = 10
         btnCancel.Text = "Close"
         btnCancel.UseVisualStyleBackColor = True
         ' 
         ' btnDeleteTrip
         ' 
-        btnDeleteTrip.Location = New Point(731, 678)
+        btnDeleteTrip.Location = New Point(430, 413)
+        btnDeleteTrip.Margin = New Padding(2, 2, 2, 2)
         btnDeleteTrip.Name = "btnDeleteTrip"
-        btnDeleteTrip.Size = New Size(188, 58)
+        btnDeleteTrip.Size = New Size(111, 35)
         btnDeleteTrip.TabIndex = 11
         btnDeleteTrip.Text = "Delete"
         btnDeleteTrip.UseVisualStyleBackColor = True
         ' 
         ' frmEditTrip
         ' 
-        AutoScaleDimensions = New SizeF(17F, 41F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1081, 788)
+        ClientSize = New Size(1452, 480)
         Controls.Add(btnDeleteTrip)
         Controls.Add(btnCancel)
         Controls.Add(Label4)
@@ -144,6 +155,7 @@ Partial Class frmEditTrip
         Controls.Add(txtTripDate)
         Controls.Add(btnEdit)
         Controls.Add(cbTripName)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "frmEditTrip"
         Text = "Edit Trip"
         ResumeLayout(False)

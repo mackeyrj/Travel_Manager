@@ -148,7 +148,7 @@ Partial Class Main_Form
         ' DTPDatePicker
         ' 
         DTPDatePicker.Location = New Point(218, 257)
-        DTPDatePicker.Margin = New Padding(2, 2, 2, 2)
+        DTPDatePicker.Margin = New Padding(2)
         DTPDatePicker.Name = "DTPDatePicker"
         DTPDatePicker.Size = New Size(333, 31)
         DTPDatePicker.TabIndex = 21
@@ -167,7 +167,7 @@ Partial Class Main_Form
         ' txtLocation
         ' 
         txtLocation.Location = New Point(163, 437)
-        txtLocation.Margin = New Padding(2, 2, 2, 2)
+        txtLocation.Margin = New Padding(2)
         txtLocation.MaxLength = 50
         txtLocation.Multiline = True
         txtLocation.Name = "txtLocation"
@@ -191,7 +191,7 @@ Partial Class Main_Form
         cbRecipient.FormattingEnabled = True
         cbRecipient.Items.AddRange(New Object() {"Guide", "Taxi", "Bus", "Hotel", "Excursion", "Merchant", "Currency", "Other"})
         cbRecipient.Location = New Point(163, 541)
-        cbRecipient.Margin = New Padding(2, 2, 2, 2)
+        cbRecipient.Margin = New Padding(2)
         cbRecipient.Name = "cbRecipient"
         cbRecipient.Size = New Size(422, 33)
         cbRecipient.TabIndex = 28
@@ -201,7 +201,7 @@ Partial Class Main_Form
         cbMerchantDetail.FormattingEnabled = True
         cbMerchantDetail.Items.AddRange(New Object() {"NA", "Food", "Souvenier", "Clothes", "Other"})
         cbMerchantDetail.Location = New Point(163, 591)
-        cbMerchantDetail.Margin = New Padding(2, 2, 2, 2)
+        cbMerchantDetail.Margin = New Padding(2)
         cbMerchantDetail.Name = "cbMerchantDetail"
         cbMerchantDetail.Size = New Size(422, 33)
         cbMerchantDetail.TabIndex = 29
@@ -232,7 +232,7 @@ Partial Class Main_Form
         ' txtAmount
         ' 
         txtAmount.Location = New Point(163, 706)
-        txtAmount.Margin = New Padding(2, 2, 2, 2)
+        txtAmount.Margin = New Padding(2)
         txtAmount.Name = "txtAmount"
         txtAmount.Size = New Size(422, 31)
         txtAmount.TabIndex = 32
@@ -240,7 +240,7 @@ Partial Class Main_Form
         ' btnSubmit
         ' 
         btnSubmit.Location = New Point(242, 749)
-        btnSubmit.Margin = New Padding(2, 2, 2, 2)
+        btnSubmit.Margin = New Padding(2)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(111, 35)
         btnSubmit.TabIndex = 33
@@ -250,7 +250,7 @@ Partial Class Main_Form
         ' btnReset
         ' 
         btnReset.Location = New Point(939, 743)
-        btnReset.Margin = New Padding(2, 2, 2, 2)
+        btnReset.Margin = New Padding(2)
         btnReset.Name = "btnReset"
         btnReset.Size = New Size(186, 35)
         btnReset.TabIndex = 34
@@ -484,7 +484,7 @@ Partial Class Main_Form
         ' txtDescription
         ' 
         txtDescription.Location = New Point(163, 648)
-        txtDescription.Margin = New Padding(2, 2, 2, 2)
+        txtDescription.Margin = New Padding(2)
         txtDescription.Name = "txtDescription"
         txtDescription.Size = New Size(422, 31)
         txtDescription.TabIndex = 37
@@ -495,9 +495,9 @@ Partial Class Main_Form
         GroupBox1.Controls.Add(rbtTraveler2)
         GroupBox1.Controls.Add(rbtTraveler1)
         GroupBox1.Location = New Point(37, 292)
-        GroupBox1.Margin = New Padding(2, 2, 2, 2)
+        GroupBox1.Margin = New Padding(2)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Padding = New Padding(2, 2, 2, 2)
+        GroupBox1.Padding = New Padding(2)
         GroupBox1.Size = New Size(481, 55)
         GroupBox1.TabIndex = 40
         GroupBox1.TabStop = False
@@ -517,7 +517,7 @@ Partial Class Main_Form
         ' 
         rbtTraveler2.AutoSize = True
         rbtTraveler2.Location = New Point(362, 17)
-        rbtTraveler2.Margin = New Padding(2, 2, 2, 2)
+        rbtTraveler2.Margin = New Padding(2)
         rbtTraveler2.Name = "rbtTraveler2"
         rbtTraveler2.Size = New Size(56, 29)
         rbtTraveler2.TabIndex = 26
@@ -529,7 +529,7 @@ Partial Class Main_Form
         ' 
         rbtTraveler1.AutoSize = True
         rbtTraveler1.Location = New Point(255, 17)
-        rbtTraveler1.Margin = New Padding(2, 2, 2, 2)
+        rbtTraveler1.Margin = New Padding(2)
         rbtTraveler1.Name = "rbtTraveler1"
         rbtTraveler1.Size = New Size(56, 29)
         rbtTraveler1.TabIndex = 25
@@ -543,9 +543,9 @@ Partial Class Main_Form
         GroupBox2.Controls.Add(rbtForeignCurrency)
         GroupBox2.Controls.Add(rbtUSCurrency)
         GroupBox2.Location = New Point(37, 363)
-        GroupBox2.Margin = New Padding(2, 2, 2, 2)
+        GroupBox2.Margin = New Padding(2)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Padding = New Padding(2, 2, 2, 2)
+        GroupBox2.Padding = New Padding(2)
         GroupBox2.Size = New Size(481, 55)
         GroupBox2.TabIndex = 41
         GroupBox2.TabStop = False
@@ -565,7 +565,7 @@ Partial Class Main_Form
         ' 
         rbtForeignCurrency.AutoSize = True
         rbtForeignCurrency.Location = New Point(362, 18)
-        rbtForeignCurrency.Margin = New Padding(2, 2, 2, 2)
+        rbtForeignCurrency.Margin = New Padding(2)
         rbtForeignCurrency.Name = "rbtForeignCurrency"
         rbtForeignCurrency.Size = New Size(97, 29)
         rbtForeignCurrency.TabIndex = 41
@@ -577,7 +577,7 @@ Partial Class Main_Form
         ' 
         rbtUSCurrency.AutoSize = True
         rbtUSCurrency.Location = New Point(257, 18)
-        rbtUSCurrency.Margin = New Padding(2, 2, 2, 2)
+        rbtUSCurrency.Margin = New Padding(2)
         rbtUSCurrency.Name = "rbtUSCurrency"
         rbtUSCurrency.Size = New Size(59, 29)
         rbtUSCurrency.TabIndex = 40
@@ -790,7 +790,7 @@ Partial Class Main_Form
         scBeginingCash.Panel2.Controls.Add(lblBeginFrnrTaveler1)
         scBeginingCash.Panel2.Controls.Add(lblBCForeignCashTraveler1)
         scBeginingCash.Size = New Size(768, 150)
-        scBeginingCash.SplitterDistance = 374
+        scBeginingCash.SplitterDistance = 373
         scBeginingCash.TabIndex = 44
         ' 
         ' scCurrentCash
@@ -839,7 +839,7 @@ Partial Class Main_Form
         ' Button1
         ' 
         Button1.Location = New Point(684, 757)
-        Button1.Margin = New Padding(2, 2, 2, 2)
+        Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
         Button1.Size = New Size(111, 35)
         Button1.TabIndex = 48
