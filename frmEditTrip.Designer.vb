@@ -33,13 +33,14 @@ Partial Class frmEditTrip
         Label4 = New Label()
         btnCancel = New Button()
         btnDeleteTrip = New Button()
+        TextBox1 = New TextBox()
         SuspendLayout()
         ' 
         ' cbTripName
         ' 
         cbTripName.FormattingEnabled = True
         cbTripName.Location = New Point(162, 64)
-        cbTripName.Margin = New Padding(2, 2, 2, 2)
+        cbTripName.Margin = New Padding(2)
         cbTripName.Name = "cbTripName"
         cbTripName.Size = New Size(358, 33)
         cbTripName.TabIndex = 0
@@ -47,7 +48,7 @@ Partial Class frmEditTrip
         ' btnEdit
         ' 
         btnEdit.Location = New Point(56, 404)
-        btnEdit.Margin = New Padding(2, 2, 2, 2)
+        btnEdit.Margin = New Padding(2)
         btnEdit.Name = "btnEdit"
         btnEdit.Size = New Size(111, 35)
         btnEdit.TabIndex = 1
@@ -57,7 +58,7 @@ Partial Class frmEditTrip
         ' txtTripDate
         ' 
         txtTripDate.Location = New Point(162, 140)
-        txtTripDate.Margin = New Padding(2, 2, 2, 2)
+        txtTripDate.Margin = New Padding(2)
         txtTripDate.Name = "txtTripDate"
         txtTripDate.Size = New Size(358, 31)
         txtTripDate.TabIndex = 3
@@ -65,7 +66,7 @@ Partial Class frmEditTrip
         ' txtTripDestination
         ' 
         txtTripDestination.Location = New Point(162, 212)
-        txtTripDestination.Margin = New Padding(2, 2, 2, 2)
+        txtTripDestination.Margin = New Padding(2)
         txtTripDestination.Name = "txtTripDestination"
         txtTripDestination.Size = New Size(358, 31)
         txtTripDestination.TabIndex = 4
@@ -73,7 +74,7 @@ Partial Class frmEditTrip
         ' txtTripDetails
         ' 
         txtTripDetails.Location = New Point(162, 283)
-        txtTripDetails.Margin = New Padding(2, 2, 2, 2)
+        txtTripDetails.Margin = New Padding(2)
         txtTripDetails.Multiline = True
         txtTripDetails.Name = "txtTripDetails"
         txtTripDetails.Size = New Size(358, 96)
@@ -122,7 +123,7 @@ Partial Class frmEditTrip
         ' btnCancel
         ' 
         btnCancel.Location = New Point(225, 404)
-        btnCancel.Margin = New Padding(2, 2, 2, 2)
+        btnCancel.Margin = New Padding(2)
         btnCancel.Name = "btnCancel"
         btnCancel.Size = New Size(111, 35)
         btnCancel.TabIndex = 10
@@ -132,18 +133,26 @@ Partial Class frmEditTrip
         ' btnDeleteTrip
         ' 
         btnDeleteTrip.Location = New Point(430, 413)
-        btnDeleteTrip.Margin = New Padding(2, 2, 2, 2)
+        btnDeleteTrip.Margin = New Padding(2)
         btnDeleteTrip.Name = "btnDeleteTrip"
         btnDeleteTrip.Size = New Size(111, 35)
         btnDeleteTrip.TabIndex = 11
         btnDeleteTrip.Text = "Delete"
         btnDeleteTrip.UseVisualStyleBackColor = True
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(808, 54)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(150, 31)
+        TextBox1.TabIndex = 12
+        ' 
         ' frmEditTrip
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1452, 480)
+        Controls.Add(TextBox1)
         Controls.Add(btnDeleteTrip)
         Controls.Add(btnCancel)
         Controls.Add(Label4)
@@ -155,7 +164,7 @@ Partial Class frmEditTrip
         Controls.Add(txtTripDate)
         Controls.Add(btnEdit)
         Controls.Add(cbTripName)
-        Margin = New Padding(2, 2, 2, 2)
+        Margin = New Padding(2)
         Name = "frmEditTrip"
         Text = "Edit Trip"
         ResumeLayout(False)
@@ -173,4 +182,5 @@ Partial Class frmEditTrip
     Friend WithEvents Label4 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnDeleteTrip As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
