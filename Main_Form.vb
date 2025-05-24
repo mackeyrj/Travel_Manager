@@ -185,12 +185,53 @@
     End Sub
 
     Private Sub TripMenuItem_Click(sender As Object, e As EventArgs)
-        Dim menuItem = CType(sender, ToolStripMenuItem)
-        Dim tripID = CInt(menuItem.Tag)
+        Using db As New TravelManagerContext()
+            Dim tripNames = db.Trip.Select(Function(t) t.TripName).ToList()
 
-        MessageBox.Show($"Trip selected: {menuItem.Text} (ID: {tripID})", "Trip Load")
-        ' You can now load or open a trip form here
-        lblTripName.Text = menuItem.Text
+            If tripNames.Count = 0 Then
+                MessageBox.Show("No trips found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return
+            End If
+
+            Dim list As String = String.Join(Environment.NewLine, tripNames)
+            Dim input As String = InputBox("Available Trips:" & Environment.NewLine & list & vbNewLine & vbNewLine & "Enter the trip name exactly:", "Select Trip")
+
+            If String.IsNullOrWhiteSpace(input) OrElse Not tripNames.Contains(input) Then
+                MessageBox.Show("Invalid or missing trip name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return
+            End If
+
+            ' Proceed with initializing the trip
+            TripExpenseHelper.InitializeTripExpenseForm(
+                input,
+        lblTripName,
+        rbtTraveler1,
+        rbtTraveler2,
+        rbtUSCurrency,
+        rbtForeignCurrency,
+        txtLocation,
+        cbRecipient,
+        cbMerchantDetail,
+        txtDescription,
+        txtAmount,
+        lblBCUSCashTraveler1,
+        lblBCUSCashTraveler2,
+        lblBCForeignCashTraveler1,
+        lblBCForeignCashTraveler2,
+        lblCCUSCashTraveler1,
+        lblCCUSCashTraveler2,
+        lblCCForeignCashTraveler1,
+        lblCCForeignCashTraveler2,
+        lblBeginUSTraveler1,
+        lblBeginUSTraveler2,
+        lblBeginFrnrTaveler1,
+        lblBeginFrnTraveler2,
+        lblCurrentUSraveler1,
+        lblCurrentUSTraveler2,
+        lblCurrentFRNTraveler1,
+        lblCurrentFrnTraveler2
+           )
+        End Using
     End Sub
 
     Private Sub EditTripToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditTripToolStripMenuItem.Click
@@ -204,4 +245,10 @@
     Private Sub Main_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub LoadTripToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LoadTripToolStripMenuItem1.Click
+
+    End Sub
+
+
 End Class
