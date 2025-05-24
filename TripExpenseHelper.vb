@@ -1,5 +1,6 @@
 ﻿Imports System.Linq
 
+
 Public Class TripExpenseHelper
 
     Public Shared Sub InitializeTripExpenseForm(
@@ -15,7 +16,7 @@ Public Class TripExpenseHelper
         txtDescription As TextBox,
         txtAmount As TextBox,
         lblBCUSCashTraveler1 As Label,
-lblBCUSCashTraveler2 As Label,
+        lblBCUSCashTraveler2 As Label,
         lblBCForeignCashTraveler1 As Label,
         lblBCForeignCashTraveler2 As Label,
         lblCCUSCashTraveler1 As Label,
@@ -26,7 +27,7 @@ lblBCUSCashTraveler2 As Label,
         lblBeginUSTraveler2 As Label,
         lblBeginFrnTraveler1 As Label,
         lblBeginFrnTraveler2 As Label,
-        lblCurrentUSraveler1 As Label,
+        lblCurrentUSTraveler1 As Label,
         lblCurrentUSTraveler2 As Label,
         lblCurrentFRNTraveler1 As Label,
         lblCurrentFrnTraveler2 As Label
@@ -64,29 +65,44 @@ lblBCUSCashTraveler2 As Label,
             txtDescription.Clear()
             txtAmount.Clear()
 
-            ' Step 5: Set traveler initials to cash labels
-            lblBCUSCashTraveler1.Text = traveler1.Initials
-            lblBCForeignCashTraveler1.Text = traveler1.Initials
-            lblBCUSCashTraveler2.Text = traveler2.Initials
-            lblBCForeignCashTraveler2.Text = traveler2.Initials
+            ' Step 5 & 6: Setup label structures and reset them
+            Dim traveler1Labels As New TravelerCashLabels With {
+                .BeginUS = lblBeginUSTraveler1,
+                .BeginFrn = lblBeginFrnTraveler1,
+                .CurrentUS = lblCurrentUSTraveler1,
+                .CurrentFrn = lblCurrentFRNTraveler1,
+                .BCUSCash = lblBCUSCashTraveler1,
+                .BCForeignCash = lblBCForeignCashTraveler1,
+                .CCUSCash = lblCCUSCashTraveler1,
+                .CCForeignCash = lblCCForeignCashTraveler1
+            }
 
+            Dim traveler2Labels As New TravelerCashLabels With {
+                .BeginUS = lblBeginUSTraveler2,
+                .BeginFrn = lblBeginFrnTraveler2,
+                .CurrentUS = lblCurrentUSTraveler2,
+                .CurrentFrn = lblCurrentFrnTraveler2,
+                .BCUSCash = lblBCUSCashTraveler2,
+                .BCForeignCash = lblBCForeignCashTraveler2,
+                .CCUSCash = lblCCUSCashTraveler2,
+                .CCForeignCash = lblCCForeignCashTraveler2
+            }
 
-            lblCCUSCashTraveler1.Text = traveler1.Initials
-            lblCCUSCashTraveler2.Text = traveler2.Initials
-            lblCCForeignCashTraveler1.Text = traveler1.Initials
-            lblCCForeignCashTraveler2.Text = traveler2.Initials
+            ' Set initials to header labels
+            traveler1Labels.BCUSCash.Text = traveler1.Initials
+            traveler1Labels.BCForeignCash.Text = traveler1.Initials
+            traveler1Labels.CCUSCash.Text = traveler1.Initials
+            traveler1Labels.CCForeignCash.Text = traveler1.Initials
 
-            ' Step 6: Set all cash-related balance labels to 0
-            lblBeginUSTraveler1.Text = "0"
-            lblBeginUSTraveler2.Text = "0"
-            lblBeginFrnTraveler1.Text = "0"
-            lblBeginFrnTraveler2.Text = "0"
-            lblCurrentUSraveler1.Text = "0"
-            lblCurrentUSTraveler2.Text = "0"
-            lblCurrentFRNTraveler1.Text = "0"
-            lblCurrentFrnTraveler2.Text = "0"
+            traveler2Labels.BCUSCash.Text = traveler2.Initials
+            traveler2Labels.BCForeignCash.Text = traveler2.Initials
+            traveler2Labels.CCUSCash.Text = traveler2.Initials
+            traveler2Labels.CCForeignCash.Text = traveler2.Initials
+
+            ' Reset all numeric labels to "0"
+            ResetTravelerCashLabels(traveler1Labels)
+            ResetTravelerCashLabels(traveler2Labels)
         End Using
     End Sub
 
 End Class
-

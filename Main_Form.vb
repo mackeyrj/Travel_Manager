@@ -1,4 +1,6 @@
-﻿Public Class Main_Form
+﻿
+
+Public Class Main_Form
     Private Sub TransportationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransportationToolStripMenuItem.Click
         Transportation.Show()
     End Sub
@@ -226,7 +228,7 @@
         lblBeginUSTraveler2,
         lblBeginFrnrTaveler1,
         lblBeginFrnTraveler2,
-        lblCurrentUSraveler1,
+        lblCurrentUSTraveler1,
         lblCurrentUSTraveler2,
         lblCurrentFRNTraveler1,
         lblCurrentFrnTraveler2

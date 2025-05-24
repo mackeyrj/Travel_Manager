@@ -48,7 +48,7 @@ Partial Class Main_Form
         lblCurrentFrnTraveler2 = New Label()
         lblCurrentFRNTraveler1 = New Label()
         lblCurrentUSTraveler2 = New Label()
-        lblCurrentUSraveler1 = New Label()
+        lblCurrentUSTraveler1 = New Label()
         lblCCForeignCashTraveler2 = New Label()
         lblCCForeignCashTraveler1 = New Label()
         lblCCUSCashTraveler2 = New Label()
@@ -112,70 +112,77 @@ Partial Class Main_Form
         ' lblTitle
         ' 
         lblTitle.AutoSize = True
-        lblTitle.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
-        lblTitle.Location = New Point(371, 285)
+        lblTitle.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        lblTitle.Location = New Point(218, 174)
+        lblTitle.Margin = New Padding(2, 0, 2, 0)
         lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(448, 81)
+        lblTitle.Size = New Size(268, 48)
         lblTitle.TabIndex = 0
         lblTitle.Text = "RA Travel Cash"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label1.ForeColor = Color.Green
-        Label1.Location = New Point(1404, 312)
+        Label1.Location = New Point(826, 190)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(174, 54)
+        Label1.Size = New Size(104, 32)
         Label1.TabIndex = 1
         Label1.Text = "US Cash"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label2.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        Label2.Location = New Point(1918, 312)
+        Label2.Location = New Point(1128, 190)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(266, 54)
+        Label2.Size = New Size(161, 32)
         Label2.TabIndex = 2
         Label2.Text = "Foreign Cash"
         Label2.UseWaitCursor = True
         ' 
         ' DTPDatePicker
         ' 
-        DTPDatePicker.Location = New Point(371, 421)
+        DTPDatePicker.Location = New Point(218, 257)
+        DTPDatePicker.Margin = New Padding(2, 2, 2, 2)
         DTPDatePicker.Name = "DTPDatePicker"
-        DTPDatePicker.Size = New Size(563, 47)
+        DTPDatePicker.Size = New Size(333, 31)
         DTPDatePicker.TabIndex = 21
         ' 
         ' lblLocation
         ' 
         lblLocation.AutoSize = True
-        lblLocation.Font = New Font("Segoe UI", 10.0F)
-        lblLocation.Location = New Point(63, 759)
+        lblLocation.Font = New Font("Segoe UI", 10F)
+        lblLocation.Location = New Point(37, 463)
+        lblLocation.Margin = New Padding(2, 0, 2, 0)
         lblLocation.Name = "lblLocation"
-        lblLocation.Size = New Size(148, 46)
+        lblLocation.Size = New Size(87, 28)
         lblLocation.TabIndex = 25
         lblLocation.Text = "Location"
         ' 
         ' txtLocation
         ' 
-        txtLocation.Location = New Point(277, 717)
+        txtLocation.Location = New Point(163, 437)
+        txtLocation.Margin = New Padding(2, 2, 2, 2)
         txtLocation.MaxLength = 50
         txtLocation.Multiline = True
         txtLocation.Name = "txtLocation"
         txtLocation.ScrollBars = ScrollBars.Vertical
-        txtLocation.Size = New Size(715, 143)
+        txtLocation.Size = New Size(422, 89)
         txtLocation.TabIndex = 26
         ' 
         ' lblType
         ' 
         lblType.AutoSize = True
-        lblType.Font = New Font("Segoe UI", 10.0F)
-        lblType.Location = New Point(63, 877)
+        lblType.Font = New Font("Segoe UI", 10F)
+        lblType.Location = New Point(37, 535)
+        lblType.Margin = New Padding(2, 0, 2, 0)
         lblType.Name = "lblType"
-        lblType.Size = New Size(90, 46)
+        lblType.Size = New Size(53, 28)
         lblType.TabIndex = 27
         lblType.Text = "Type"
         ' 
@@ -183,27 +190,30 @@ Partial Class Main_Form
         ' 
         cbRecipient.FormattingEnabled = True
         cbRecipient.Items.AddRange(New Object() {"Guide", "Taxi", "Bus", "Hotel", "Excursion", "Merchant", "Currency", "Other"})
-        cbRecipient.Location = New Point(277, 887)
+        cbRecipient.Location = New Point(163, 541)
+        cbRecipient.Margin = New Padding(2, 2, 2, 2)
         cbRecipient.Name = "cbRecipient"
-        cbRecipient.Size = New Size(715, 49)
+        cbRecipient.Size = New Size(422, 33)
         cbRecipient.TabIndex = 28
         ' 
         ' cbMerchantDetail
         ' 
         cbMerchantDetail.FormattingEnabled = True
         cbMerchantDetail.Items.AddRange(New Object() {"NA", "Food", "Souvenier", "Clothes", "Other"})
-        cbMerchantDetail.Location = New Point(277, 969)
+        cbMerchantDetail.Location = New Point(163, 591)
+        cbMerchantDetail.Margin = New Padding(2, 2, 2, 2)
         cbMerchantDetail.Name = "cbMerchantDetail"
-        cbMerchantDetail.Size = New Size(715, 49)
+        cbMerchantDetail.Size = New Size(422, 33)
         cbMerchantDetail.TabIndex = 29
         cbMerchantDetail.Visible = False
         ' 
         ' lblMerchantType
         ' 
-        lblMerchantType.Font = New Font("Segoe UI", 10.0F)
-        lblMerchantType.Location = New Point(63, 946)
+        lblMerchantType.Font = New Font("Segoe UI", 10F)
+        lblMerchantType.Location = New Point(37, 577)
+        lblMerchantType.Margin = New Padding(2, 0, 2, 0)
         lblMerchantType.Name = "lblMerchantType"
-        lblMerchantType.Size = New Size(167, 93)
+        lblMerchantType.Size = New Size(98, 57)
         lblMerchantType.TabIndex = 30
         lblMerchantType.Text = "Merchant Type"
         lblMerchantType.Visible = False
@@ -211,34 +221,38 @@ Partial Class Main_Form
         ' lblAmount
         ' 
         lblAmount.AutoSize = True
-        lblAmount.Font = New Font("Segoe UI", 10.0F)
-        lblAmount.Location = New Point(63, 1159)
+        lblAmount.Font = New Font("Segoe UI", 10F)
+        lblAmount.Location = New Point(37, 707)
+        lblAmount.Margin = New Padding(2, 0, 2, 0)
         lblAmount.Name = "lblAmount"
-        lblAmount.Size = New Size(141, 46)
+        lblAmount.Size = New Size(83, 28)
         lblAmount.TabIndex = 31
         lblAmount.Text = "Amount"
         ' 
         ' txtAmount
         ' 
-        txtAmount.Location = New Point(277, 1158)
+        txtAmount.Location = New Point(163, 706)
+        txtAmount.Margin = New Padding(2, 2, 2, 2)
         txtAmount.Name = "txtAmount"
-        txtAmount.Size = New Size(715, 47)
+        txtAmount.Size = New Size(422, 31)
         txtAmount.TabIndex = 32
         ' 
         ' btnSubmit
         ' 
-        btnSubmit.Location = New Point(411, 1228)
+        btnSubmit.Location = New Point(242, 749)
+        btnSubmit.Margin = New Padding(2, 2, 2, 2)
         btnSubmit.Name = "btnSubmit"
-        btnSubmit.Size = New Size(189, 57)
+        btnSubmit.Size = New Size(111, 35)
         btnSubmit.TabIndex = 33
         btnSubmit.Text = "Submit"
         btnSubmit.UseVisualStyleBackColor = True
         ' 
         ' btnReset
         ' 
-        btnReset.Location = New Point(1596, 1219)
+        btnReset.Location = New Point(939, 743)
+        btnReset.Margin = New Padding(2, 2, 2, 2)
         btnReset.Name = "btnReset"
-        btnReset.Size = New Size(316, 57)
+        btnReset.Size = New Size(186, 35)
         btnReset.TabIndex = 34
         btnReset.Text = "Reset Amounts to 0"
         btnReset.UseVisualStyleBackColor = True
@@ -246,10 +260,11 @@ Partial Class Main_Form
         ' lblBeginFrnTraveler2
         ' 
         lblBeginFrnTraveler2.AutoSize = True
-        lblBeginFrnTraveler2.Location = New Point(428, 144)
+        lblBeginFrnTraveler2.Location = New Point(252, 88)
+        lblBeginFrnTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblBeginFrnTraveler2.Name = "lblBeginFrnTraveler2"
         lblBeginFrnTraveler2.RightToLeft = RightToLeft.Yes
-        lblBeginFrnTraveler2.Size = New Size(34, 41)
+        lblBeginFrnTraveler2.Size = New Size(22, 25)
         lblBeginFrnTraveler2.TabIndex = 25
         lblBeginFrnTraveler2.Text = "0"
         lblBeginFrnTraveler2.TextAlign = ContentAlignment.BottomLeft
@@ -257,10 +272,11 @@ Partial Class Main_Form
         ' lblBeginFrnrTaveler1
         ' 
         lblBeginFrnrTaveler1.AutoSize = True
-        lblBeginFrnrTaveler1.Location = New Point(139, 144)
+        lblBeginFrnrTaveler1.Location = New Point(82, 88)
+        lblBeginFrnrTaveler1.Margin = New Padding(2, 0, 2, 0)
         lblBeginFrnrTaveler1.Name = "lblBeginFrnrTaveler1"
         lblBeginFrnrTaveler1.RightToLeft = RightToLeft.Yes
-        lblBeginFrnrTaveler1.Size = New Size(34, 41)
+        lblBeginFrnrTaveler1.Size = New Size(22, 25)
         lblBeginFrnrTaveler1.TabIndex = 24
         lblBeginFrnrTaveler1.Text = "0"
         lblBeginFrnrTaveler1.TextAlign = ContentAlignment.BottomLeft
@@ -268,10 +284,11 @@ Partial Class Main_Form
         ' lblBeginUSTraveler2
         ' 
         lblBeginUSTraveler2.AutoSize = True
-        lblBeginUSTraveler2.Location = New Point(416, 146)
+        lblBeginUSTraveler2.Location = New Point(245, 89)
+        lblBeginUSTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblBeginUSTraveler2.Name = "lblBeginUSTraveler2"
         lblBeginUSTraveler2.RightToLeft = RightToLeft.Yes
-        lblBeginUSTraveler2.Size = New Size(34, 41)
+        lblBeginUSTraveler2.Size = New Size(22, 25)
         lblBeginUSTraveler2.TabIndex = 23
         lblBeginUSTraveler2.Text = "0"
         lblBeginUSTraveler2.TextAlign = ContentAlignment.BottomLeft
@@ -279,10 +296,11 @@ Partial Class Main_Form
         ' lblBeginUSTraveler1
         ' 
         lblBeginUSTraveler1.AutoSize = True
-        lblBeginUSTraveler1.Location = New Point(150, 146)
+        lblBeginUSTraveler1.Location = New Point(88, 89)
+        lblBeginUSTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblBeginUSTraveler1.Name = "lblBeginUSTraveler1"
         lblBeginUSTraveler1.RightToLeft = RightToLeft.Yes
-        lblBeginUSTraveler1.Size = New Size(34, 41)
+        lblBeginUSTraveler1.Size = New Size(22, 25)
         lblBeginUSTraveler1.TabIndex = 22
         lblBeginUSTraveler1.Text = "0"
         lblBeginUSTraveler1.TextAlign = ContentAlignment.BottomLeft
@@ -290,11 +308,12 @@ Partial Class Main_Form
         ' lblBCForeignCashTraveler2
         ' 
         lblBCForeignCashTraveler2.AutoSize = True
-        lblBCForeignCashTraveler2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblBCForeignCashTraveler2.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblBCForeignCashTraveler2.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        lblBCForeignCashTraveler2.Location = New Point(403, 79)
+        lblBCForeignCashTraveler2.Location = New Point(237, 48)
+        lblBCForeignCashTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblBCForeignCashTraveler2.Name = "lblBCForeignCashTraveler2"
-        lblBCForeignCashTraveler2.Size = New Size(60, 46)
+        lblBCForeignCashTraveler2.Size = New Size(36, 28)
         lblBCForeignCashTraveler2.TabIndex = 21
         lblBCForeignCashTraveler2.Text = "T2"
         lblBCForeignCashTraveler2.UseWaitCursor = True
@@ -302,11 +321,12 @@ Partial Class Main_Form
         ' lblBCForeignCashTraveler1
         ' 
         lblBCForeignCashTraveler1.AutoSize = True
-        lblBCForeignCashTraveler1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblBCForeignCashTraveler1.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblBCForeignCashTraveler1.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        lblBCForeignCashTraveler1.Location = New Point(117, 79)
+        lblBCForeignCashTraveler1.Location = New Point(69, 48)
+        lblBCForeignCashTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblBCForeignCashTraveler1.Name = "lblBCForeignCashTraveler1"
-        lblBCForeignCashTraveler1.Size = New Size(60, 46)
+        lblBCForeignCashTraveler1.Size = New Size(36, 28)
         lblBCForeignCashTraveler1.TabIndex = 20
         lblBCForeignCashTraveler1.Text = "T1"
         lblBCForeignCashTraveler1.UseWaitCursor = True
@@ -314,11 +334,12 @@ Partial Class Main_Form
         ' lblBCUSCashTraveler2
         ' 
         lblBCUSCashTraveler2.AutoSize = True
-        lblBCUSCashTraveler2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblBCUSCashTraveler2.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblBCUSCashTraveler2.ForeColor = Color.Green
-        lblBCUSCashTraveler2.Location = New Point(400, 69)
+        lblBCUSCashTraveler2.Location = New Point(235, 42)
+        lblBCUSCashTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblBCUSCashTraveler2.Name = "lblBCUSCashTraveler2"
-        lblBCUSCashTraveler2.Size = New Size(60, 46)
+        lblBCUSCashTraveler2.Size = New Size(36, 28)
         lblBCUSCashTraveler2.TabIndex = 19
         lblBCUSCashTraveler2.Text = "T2"
         lblBCUSCashTraveler2.UseWaitCursor = True
@@ -326,11 +347,12 @@ Partial Class Main_Form
         ' lblBCUSCashTraveler1
         ' 
         lblBCUSCashTraveler1.AutoSize = True
-        lblBCUSCashTraveler1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblBCUSCashTraveler1.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblBCUSCashTraveler1.ForeColor = Color.Green
-        lblBCUSCashTraveler1.Location = New Point(122, 59)
+        lblBCUSCashTraveler1.Location = New Point(72, 36)
+        lblBCUSCashTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblBCUSCashTraveler1.Name = "lblBCUSCashTraveler1"
-        lblBCUSCashTraveler1.Size = New Size(60, 46)
+        lblBCUSCashTraveler1.Size = New Size(36, 28)
         lblBCUSCashTraveler1.TabIndex = 18
         lblBCUSCashTraveler1.Text = "T1"
         lblBCUSCashTraveler1.UseWaitCursor = True
@@ -338,10 +360,11 @@ Partial Class Main_Form
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
-        Label3.Location = New Point(1596, 380)
+        Label3.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        Label3.Location = New Point(939, 232)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(364, 46)
+        Label3.Size = New Size(224, 28)
         Label3.TabIndex = 17
         Label3.Text = "B e g i n i n g    C a s h"
         Label3.UseWaitCursor = True
@@ -349,10 +372,11 @@ Partial Class Main_Form
         ' lblCurrentFrnTraveler2
         ' 
         lblCurrentFrnTraveler2.AutoSize = True
-        lblCurrentFrnTraveler2.Location = New Point(413, 157)
+        lblCurrentFrnTraveler2.Location = New Point(243, 96)
+        lblCurrentFrnTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblCurrentFrnTraveler2.Name = "lblCurrentFrnTraveler2"
         lblCurrentFrnTraveler2.RightToLeft = RightToLeft.Yes
-        lblCurrentFrnTraveler2.Size = New Size(34, 41)
+        lblCurrentFrnTraveler2.Size = New Size(22, 25)
         lblCurrentFrnTraveler2.TabIndex = 29
         lblCurrentFrnTraveler2.Text = "0"
         lblCurrentFrnTraveler2.TextAlign = ContentAlignment.BottomLeft
@@ -360,10 +384,11 @@ Partial Class Main_Form
         ' lblCurrentFRNTraveler1
         ' 
         lblCurrentFRNTraveler1.AutoSize = True
-        lblCurrentFRNTraveler1.Location = New Point(124, 157)
+        lblCurrentFRNTraveler1.Location = New Point(73, 96)
+        lblCurrentFRNTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblCurrentFRNTraveler1.Name = "lblCurrentFRNTraveler1"
         lblCurrentFRNTraveler1.RightToLeft = RightToLeft.Yes
-        lblCurrentFRNTraveler1.Size = New Size(34, 41)
+        lblCurrentFRNTraveler1.Size = New Size(22, 25)
         lblCurrentFRNTraveler1.TabIndex = 28
         lblCurrentFRNTraveler1.Text = "0"
         lblCurrentFRNTraveler1.TextAlign = ContentAlignment.BottomLeft
@@ -371,33 +396,36 @@ Partial Class Main_Form
         ' lblCurrentUSTraveler2
         ' 
         lblCurrentUSTraveler2.AutoSize = True
-        lblCurrentUSTraveler2.Location = New Point(416, 157)
+        lblCurrentUSTraveler2.Location = New Point(245, 96)
+        lblCurrentUSTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblCurrentUSTraveler2.Name = "lblCurrentUSTraveler2"
         lblCurrentUSTraveler2.RightToLeft = RightToLeft.Yes
-        lblCurrentUSTraveler2.Size = New Size(34, 41)
+        lblCurrentUSTraveler2.Size = New Size(22, 25)
         lblCurrentUSTraveler2.TabIndex = 27
         lblCurrentUSTraveler2.Text = "0"
         lblCurrentUSTraveler2.TextAlign = ContentAlignment.BottomLeft
         ' 
-        ' lblCurrentUSraveler1
+        ' lblCurrentUSTraveler1
         ' 
-        lblCurrentUSraveler1.AutoSize = True
-        lblCurrentUSraveler1.Location = New Point(150, 157)
-        lblCurrentUSraveler1.Name = "lblCurrentUSraveler1"
-        lblCurrentUSraveler1.RightToLeft = RightToLeft.Yes
-        lblCurrentUSraveler1.Size = New Size(34, 41)
-        lblCurrentUSraveler1.TabIndex = 26
-        lblCurrentUSraveler1.Text = "0"
-        lblCurrentUSraveler1.TextAlign = ContentAlignment.BottomLeft
+        lblCurrentUSTraveler1.AutoSize = True
+        lblCurrentUSTraveler1.Location = New Point(88, 96)
+        lblCurrentUSTraveler1.Margin = New Padding(2, 0, 2, 0)
+        lblCurrentUSTraveler1.Name = "lblCurrentUSTraveler1"
+        lblCurrentUSTraveler1.RightToLeft = RightToLeft.Yes
+        lblCurrentUSTraveler1.Size = New Size(22, 25)
+        lblCurrentUSTraveler1.TabIndex = 26
+        lblCurrentUSTraveler1.Text = "0"
+        lblCurrentUSTraveler1.TextAlign = ContentAlignment.BottomLeft
         ' 
         ' lblCCForeignCashTraveler2
         ' 
         lblCCForeignCashTraveler2.AutoSize = True
-        lblCCForeignCashTraveler2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblCCForeignCashTraveler2.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblCCForeignCashTraveler2.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        lblCCForeignCashTraveler2.Location = New Point(388, 48)
+        lblCCForeignCashTraveler2.Location = New Point(228, 29)
+        lblCCForeignCashTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblCCForeignCashTraveler2.Name = "lblCCForeignCashTraveler2"
-        lblCCForeignCashTraveler2.Size = New Size(60, 46)
+        lblCCForeignCashTraveler2.Size = New Size(36, 28)
         lblCCForeignCashTraveler2.TabIndex = 25
         lblCCForeignCashTraveler2.Text = "T2"
         lblCCForeignCashTraveler2.UseWaitCursor = True
@@ -405,11 +433,12 @@ Partial Class Main_Form
         ' lblCCForeignCashTraveler1
         ' 
         lblCCForeignCashTraveler1.AutoSize = True
-        lblCCForeignCashTraveler1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblCCForeignCashTraveler1.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblCCForeignCashTraveler1.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        lblCCForeignCashTraveler1.Location = New Point(102, 48)
+        lblCCForeignCashTraveler1.Location = New Point(60, 29)
+        lblCCForeignCashTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblCCForeignCashTraveler1.Name = "lblCCForeignCashTraveler1"
-        lblCCForeignCashTraveler1.Size = New Size(60, 46)
+        lblCCForeignCashTraveler1.Size = New Size(36, 28)
         lblCCForeignCashTraveler1.TabIndex = 24
         lblCCForeignCashTraveler1.Text = "T1"
         lblCCForeignCashTraveler1.UseWaitCursor = True
@@ -417,11 +446,12 @@ Partial Class Main_Form
         ' lblCCUSCashTraveler2
         ' 
         lblCCUSCashTraveler2.AutoSize = True
-        lblCCUSCashTraveler2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblCCUSCashTraveler2.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblCCUSCashTraveler2.ForeColor = Color.Green
-        lblCCUSCashTraveler2.Location = New Point(400, 48)
+        lblCCUSCashTraveler2.Location = New Point(235, 29)
+        lblCCUSCashTraveler2.Margin = New Padding(2, 0, 2, 0)
         lblCCUSCashTraveler2.Name = "lblCCUSCashTraveler2"
-        lblCCUSCashTraveler2.Size = New Size(60, 46)
+        lblCCUSCashTraveler2.Size = New Size(36, 28)
         lblCCUSCashTraveler2.TabIndex = 23
         lblCCUSCashTraveler2.Text = "T2"
         lblCCUSCashTraveler2.UseWaitCursor = True
@@ -429,11 +459,12 @@ Partial Class Main_Form
         ' lblCCUSCashTraveler1
         ' 
         lblCCUSCashTraveler1.AutoSize = True
-        lblCCUSCashTraveler1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        lblCCUSCashTraveler1.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         lblCCUSCashTraveler1.ForeColor = Color.Green
-        lblCCUSCashTraveler1.Location = New Point(122, 48)
+        lblCCUSCashTraveler1.Location = New Point(72, 29)
+        lblCCUSCashTraveler1.Margin = New Padding(2, 0, 2, 0)
         lblCCUSCashTraveler1.Name = "lblCCUSCashTraveler1"
-        lblCCUSCashTraveler1.Size = New Size(60, 46)
+        lblCCUSCashTraveler1.Size = New Size(36, 28)
         lblCCUSCashTraveler1.TabIndex = 22
         lblCCUSCashTraveler1.Text = "T1"
         lblCCUSCashTraveler1.UseWaitCursor = True
@@ -441,19 +472,21 @@ Partial Class Main_Form
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
-        Label4.Location = New Point(1596, 779)
+        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        Label4.Location = New Point(939, 475)
+        Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(333, 46)
+        Label4.Size = New Size(205, 28)
         Label4.TabIndex = 21
         Label4.Text = "C u r r e n t    C a s h"
         Label4.UseWaitCursor = True
         ' 
         ' txtDescription
         ' 
-        txtDescription.Location = New Point(277, 1063)
+        txtDescription.Location = New Point(163, 648)
+        txtDescription.Margin = New Padding(2, 2, 2, 2)
         txtDescription.Name = "txtDescription"
-        txtDescription.Size = New Size(715, 47)
+        txtDescription.Size = New Size(422, 31)
         txtDescription.TabIndex = 37
         ' 
         ' GroupBox1
@@ -461,28 +494,32 @@ Partial Class Main_Form
         GroupBox1.Controls.Add(Label13)
         GroupBox1.Controls.Add(rbtTraveler2)
         GroupBox1.Controls.Add(rbtTraveler1)
-        GroupBox1.Location = New Point(63, 479)
+        GroupBox1.Location = New Point(37, 292)
+        GroupBox1.Margin = New Padding(2, 2, 2, 2)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(818, 90)
+        GroupBox1.Padding = New Padding(2, 2, 2, 2)
+        GroupBox1.Size = New Size(481, 55)
         GroupBox1.TabIndex = 40
         GroupBox1.TabStop = False
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI", 10.0F)
-        Label13.Location = New Point(-7, 43)
+        Label13.Font = New Font("Segoe UI", 10F)
+        Label13.Location = New Point(-4, 26)
+        Label13.Margin = New Padding(2, 0, 2, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(176, 46)
+        Label13.Size = New Size(102, 28)
         Label13.TabIndex = 27
         Label13.Text = "Select one"
         ' 
         ' rbtTraveler2
         ' 
         rbtTraveler2.AutoSize = True
-        rbtTraveler2.Location = New Point(615, 28)
+        rbtTraveler2.Location = New Point(362, 17)
+        rbtTraveler2.Margin = New Padding(2, 2, 2, 2)
         rbtTraveler2.Name = "rbtTraveler2"
-        rbtTraveler2.Size = New Size(87, 45)
+        rbtTraveler2.Size = New Size(56, 29)
         rbtTraveler2.TabIndex = 26
         rbtTraveler2.TabStop = True
         rbtTraveler2.Text = "T2"
@@ -491,9 +528,10 @@ Partial Class Main_Form
         ' rbtTraveler1
         ' 
         rbtTraveler1.AutoSize = True
-        rbtTraveler1.Location = New Point(434, 28)
+        rbtTraveler1.Location = New Point(255, 17)
+        rbtTraveler1.Margin = New Padding(2, 2, 2, 2)
         rbtTraveler1.Name = "rbtTraveler1"
-        rbtTraveler1.Size = New Size(87, 45)
+        rbtTraveler1.Size = New Size(56, 29)
         rbtTraveler1.TabIndex = 25
         rbtTraveler1.TabStop = True
         rbtTraveler1.Text = "T1"
@@ -504,28 +542,32 @@ Partial Class Main_Form
         GroupBox2.Controls.Add(Label14)
         GroupBox2.Controls.Add(rbtForeignCurrency)
         GroupBox2.Controls.Add(rbtUSCurrency)
-        GroupBox2.Location = New Point(63, 595)
+        GroupBox2.Location = New Point(37, 363)
+        GroupBox2.Margin = New Padding(2, 2, 2, 2)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(818, 90)
+        GroupBox2.Padding = New Padding(2, 2, 2, 2)
+        GroupBox2.Size = New Size(481, 55)
         GroupBox2.TabIndex = 41
         GroupBox2.TabStop = False
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 10.0F)
-        Label14.Location = New Point(-7, 44)
+        Label14.Font = New Font("Segoe UI", 10F)
+        Label14.Location = New Point(-4, 27)
+        Label14.Margin = New Padding(2, 0, 2, 0)
         Label14.Name = "Label14"
-        Label14.Size = New Size(176, 46)
+        Label14.Size = New Size(102, 28)
         Label14.TabIndex = 42
         Label14.Text = "Select one"
         ' 
         ' rbtForeignCurrency
         ' 
         rbtForeignCurrency.AutoSize = True
-        rbtForeignCurrency.Location = New Point(615, 30)
+        rbtForeignCurrency.Location = New Point(362, 18)
+        rbtForeignCurrency.Margin = New Padding(2, 2, 2, 2)
         rbtForeignCurrency.Name = "rbtForeignCurrency"
-        rbtForeignCurrency.Size = New Size(156, 45)
+        rbtForeignCurrency.Size = New Size(97, 29)
         rbtForeignCurrency.TabIndex = 41
         rbtForeignCurrency.TabStop = True
         rbtForeignCurrency.Text = "Foreign"
@@ -534,9 +576,10 @@ Partial Class Main_Form
         ' rbtUSCurrency
         ' 
         rbtUSCurrency.AutoSize = True
-        rbtUSCurrency.Location = New Point(437, 30)
+        rbtUSCurrency.Location = New Point(257, 18)
+        rbtUSCurrency.Margin = New Padding(2, 2, 2, 2)
         rbtUSCurrency.Name = "rbtUSCurrency"
-        rbtUSCurrency.Size = New Size(92, 45)
+        rbtUSCurrency.Size = New Size(59, 29)
         rbtUSCurrency.TabIndex = 40
         rbtUSCurrency.TabStop = True
         rbtUSCurrency.Text = "US"
@@ -545,11 +588,10 @@ Partial Class Main_Form
         ' lblDescription
         ' 
         lblDescription.AutoSize = True
-        lblDescription.Font = New Font("Segoe UI", 10.0F)
-        lblDescription.Location = New Point(63, 1063)
-        lblDescription.Margin = New Padding(5, 0, 5, 0)
+        lblDescription.Font = New Font("Segoe UI", 10F)
+        lblDescription.Location = New Point(37, 648)
         lblDescription.Name = "lblDescription"
-        lblDescription.Size = New Size(191, 46)
+        lblDescription.Size = New Size(112, 28)
         lblDescription.TabIndex = 42
         lblDescription.Text = "Description"
         ' 
@@ -559,8 +601,7 @@ Partial Class Main_Form
         mnuStrip.Items.AddRange(New ToolStripItem() {MS_File, EditToolStripMenuItem, NewTripToolStripMenuItem, TransportationToolStripMenuItem, TravelerInfoToolStripMenuItem, AboutToolStripMenuItem})
         mnuStrip.Location = New Point(0, 0)
         mnuStrip.Name = "mnuStrip"
-        mnuStrip.Padding = New Padding(10, 3, 0, 3)
-        mnuStrip.Size = New Size(2508, 51)
+        mnuStrip.Size = New Size(1475, 33)
         mnuStrip.TabIndex = 43
         mnuStrip.Text = "MenuStrip1"
         ' 
@@ -568,64 +609,64 @@ Partial Class Main_Form
         ' 
         MS_File.DropDownItems.AddRange(New ToolStripItem() {MS_File_Open, MS_File_Print, MS_File_Close})
         MS_File.Name = "MS_File"
-        MS_File.Size = New Size(87, 45)
+        MS_File.Size = New Size(54, 29)
         MS_File.Text = "File"
         ' 
         ' MS_File_Open
         ' 
         MS_File_Open.DropDownItems.AddRange(New ToolStripItem() {MS_File_Open_Traveler1, MS_File_Open_Traveler2, BalanceToolStripMenuItem})
         MS_File_Open.Name = "MS_File_Open"
-        MS_File_Open.Size = New Size(351, 54)
+        MS_File_Open.Size = New Size(214, 34)
         MS_File_Open.Text = "Open "
         ' 
         ' MS_File_Open_Traveler1
         ' 
         MS_File_Open_Traveler1.Name = "MS_File_Open_Traveler1"
-        MS_File_Open_Traveler1.Size = New Size(285, 54)
+        MS_File_Open_Traveler1.Size = New Size(173, 34)
         MS_File_Open_Traveler1.Text = "RJM "
         ' 
         ' MS_File_Open_Traveler2
         ' 
         MS_File_Open_Traveler2.Name = "MS_File_Open_Traveler2"
-        MS_File_Open_Traveler2.Size = New Size(285, 54)
+        MS_File_Open_Traveler2.Size = New Size(173, 34)
         MS_File_Open_Traveler2.Text = "AED"
         ' 
         ' BalanceToolStripMenuItem
         ' 
         BalanceToolStripMenuItem.Name = "BalanceToolStripMenuItem"
-        BalanceToolStripMenuItem.Size = New Size(285, 54)
+        BalanceToolStripMenuItem.Size = New Size(173, 34)
         BalanceToolStripMenuItem.Text = "Balance"
         ' 
         ' MS_File_Print
         ' 
         MS_File_Print.DropDownItems.AddRange(New ToolStripItem() {MS_File_Print_Traveler1, MS_File_Print_Traveler2, BalanceToolStripMenuItem1})
         MS_File_Print.Name = "MS_File_Print"
-        MS_File_Print.Size = New Size(351, 54)
+        MS_File_Print.Size = New Size(214, 34)
         MS_File_Print.Text = "Print"
         ' 
         ' MS_File_Print_Traveler1
         ' 
         MS_File_Print_Traveler1.Name = "MS_File_Print_Traveler1"
-        MS_File_Print_Traveler1.Size = New Size(285, 54)
+        MS_File_Print_Traveler1.Size = New Size(173, 34)
         MS_File_Print_Traveler1.Text = "RJM"
         ' 
         ' MS_File_Print_Traveler2
         ' 
         MS_File_Print_Traveler2.Name = "MS_File_Print_Traveler2"
-        MS_File_Print_Traveler2.Size = New Size(285, 54)
+        MS_File_Print_Traveler2.Size = New Size(173, 34)
         MS_File_Print_Traveler2.Text = "AED"
         ' 
         ' BalanceToolStripMenuItem1
         ' 
         BalanceToolStripMenuItem1.Name = "BalanceToolStripMenuItem1"
-        BalanceToolStripMenuItem1.Size = New Size(285, 54)
+        BalanceToolStripMenuItem1.Size = New Size(173, 34)
         BalanceToolStripMenuItem1.Text = "Balance"
         ' 
         ' MS_File_Close
         ' 
         MS_File_Close.Name = "MS_File_Close"
         MS_File_Close.ShortcutKeys = Keys.Alt Or Keys.C
-        MS_File_Close.Size = New Size(351, 54)
+        MS_File_Close.Size = New Size(214, 34)
         MS_File_Close.Text = "Close"
         MS_File_Close.ToolTipText = "Close the App"
         ' 
@@ -633,107 +674,106 @@ Partial Class Main_Form
         ' 
         EditToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddRJMUSCashToolStripMenuItem, AddAEDUSCashToolStripMenuItem, AddRJMForeignCashToolStripMenuItem, AddAEDForeignCashToolStripMenuItem, SettingsToolStripMenuItem})
         EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        EditToolStripMenuItem.Size = New Size(92, 45)
+        EditToolStripMenuItem.Size = New Size(58, 29)
         EditToolStripMenuItem.Text = "Edit"
         ' 
         ' AddRJMUSCashToolStripMenuItem
         ' 
         AddRJMUSCashToolStripMenuItem.Name = "AddRJMUSCashToolStripMenuItem"
-        AddRJMUSCashToolStripMenuItem.Size = New Size(485, 54)
+        AddRJMUSCashToolStripMenuItem.Size = New Size(295, 34)
         AddRJMUSCashToolStripMenuItem.Text = "Add RJM US Cash"
         ' 
         ' AddAEDUSCashToolStripMenuItem
         ' 
         AddAEDUSCashToolStripMenuItem.Name = "AddAEDUSCashToolStripMenuItem"
-        AddAEDUSCashToolStripMenuItem.Size = New Size(485, 54)
+        AddAEDUSCashToolStripMenuItem.Size = New Size(295, 34)
         AddAEDUSCashToolStripMenuItem.Text = "Add AED US Cash"
         ' 
         ' AddRJMForeignCashToolStripMenuItem
         ' 
         AddRJMForeignCashToolStripMenuItem.Name = "AddRJMForeignCashToolStripMenuItem"
-        AddRJMForeignCashToolStripMenuItem.Size = New Size(485, 54)
+        AddRJMForeignCashToolStripMenuItem.Size = New Size(295, 34)
         AddRJMForeignCashToolStripMenuItem.Text = "Add RJM Foreign Cash"
         ' 
         ' AddAEDForeignCashToolStripMenuItem
         ' 
         AddAEDForeignCashToolStripMenuItem.Name = "AddAEDForeignCashToolStripMenuItem"
-        AddAEDForeignCashToolStripMenuItem.Size = New Size(485, 54)
+        AddAEDForeignCashToolStripMenuItem.Size = New Size(295, 34)
         AddAEDForeignCashToolStripMenuItem.Text = "Add AED Foreign Cash"
         ' 
         ' SettingsToolStripMenuItem
         ' 
         SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        SettingsToolStripMenuItem.Size = New Size(485, 54)
+        SettingsToolStripMenuItem.Size = New Size(295, 34)
         SettingsToolStripMenuItem.Text = "Settings"
         ' 
         ' NewTripToolStripMenuItem
         ' 
         NewTripToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {NewTripToolStripMenuItem1, LoadTripToolStripMenuItem1, EditTripToolStripMenuItem})
         NewTripToolStripMenuItem.Name = "NewTripToolStripMenuItem"
-        NewTripToolStripMenuItem.Size = New Size(90, 45)
+        NewTripToolStripMenuItem.Size = New Size(56, 29)
         NewTripToolStripMenuItem.Text = "Trip"
         ' 
         ' NewTripToolStripMenuItem1
         ' 
         NewTripToolStripMenuItem1.Name = "NewTripToolStripMenuItem1"
-        NewTripToolStripMenuItem1.Size = New Size(305, 54)
+        NewTripToolStripMenuItem1.Size = New Size(270, 34)
         NewTripToolStripMenuItem1.Text = "New Trip"
         ' 
         ' LoadTripToolStripMenuItem1
         ' 
         LoadTripToolStripMenuItem1.Name = "LoadTripToolStripMenuItem1"
-        LoadTripToolStripMenuItem1.Size = New Size(305, 54)
+        LoadTripToolStripMenuItem1.Size = New Size(270, 34)
         LoadTripToolStripMenuItem1.Text = "Load Trip"
         ' 
         ' EditTripToolStripMenuItem
         ' 
         EditTripToolStripMenuItem.Name = "EditTripToolStripMenuItem"
-        EditTripToolStripMenuItem.Size = New Size(305, 54)
+        EditTripToolStripMenuItem.Size = New Size(270, 34)
         EditTripToolStripMenuItem.Text = "Edit Trip"
         ' 
         ' TransportationToolStripMenuItem
         ' 
         TransportationToolStripMenuItem.Name = "TransportationToolStripMenuItem"
-        TransportationToolStripMenuItem.Size = New Size(233, 45)
+        TransportationToolStripMenuItem.Size = New Size(142, 29)
         TransportationToolStripMenuItem.Text = "Transportation"
         ' 
         ' TravelerInfoToolStripMenuItem
         ' 
         TravelerInfoToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddTravelerToolStripMenuItem, EditTravelerToolStripMenuItem, DeleteTraverToolStripMenuItem})
         TravelerInfoToolStripMenuItem.Name = "TravelerInfoToolStripMenuItem"
-        TravelerInfoToolStripMenuItem.Size = New Size(143, 45)
+        TravelerInfoToolStripMenuItem.Size = New Size(87, 29)
         TravelerInfoToolStripMenuItem.Text = "Traveler"
         ' 
         ' AddTravelerToolStripMenuItem
         ' 
         AddTravelerToolStripMenuItem.Name = "AddTravelerToolStripMenuItem"
-        AddTravelerToolStripMenuItem.Size = New Size(356, 54)
+        AddTravelerToolStripMenuItem.Size = New Size(215, 34)
         AddTravelerToolStripMenuItem.Text = "Add Traveler"
         ' 
         ' EditTravelerToolStripMenuItem
         ' 
         EditTravelerToolStripMenuItem.Name = "EditTravelerToolStripMenuItem"
-        EditTravelerToolStripMenuItem.Size = New Size(356, 54)
+        EditTravelerToolStripMenuItem.Size = New Size(215, 34)
         EditTravelerToolStripMenuItem.Text = "Edit Traveler"
         ' 
         ' DeleteTraverToolStripMenuItem
         ' 
         DeleteTraverToolStripMenuItem.Name = "DeleteTraverToolStripMenuItem"
-        DeleteTraverToolStripMenuItem.Size = New Size(356, 54)
+        DeleteTraverToolStripMenuItem.Size = New Size(215, 34)
         DeleteTraverToolStripMenuItem.Text = "Delete Traver"
         ' 
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(124, 45)
+        AboutToolStripMenuItem.Size = New Size(78, 29)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' scBeginingCash
         ' 
         scBeginingCash.BackColor = SystemColors.ButtonHighlight
         scBeginingCash.BorderStyle = BorderStyle.Fixed3D
-        scBeginingCash.Location = New Point(1108, 479)
-        scBeginingCash.Margin = New Padding(5)
+        scBeginingCash.Location = New Point(652, 292)
         scBeginingCash.Name = "scBeginingCash"
         ' 
         ' scBeginingCash.Panel1
@@ -749,17 +789,15 @@ Partial Class Main_Form
         scBeginingCash.Panel2.Controls.Add(lblBCForeignCashTraveler2)
         scBeginingCash.Panel2.Controls.Add(lblBeginFrnrTaveler1)
         scBeginingCash.Panel2.Controls.Add(lblBCForeignCashTraveler1)
-        scBeginingCash.Size = New Size(1306, 246)
-        scBeginingCash.SplitterDistance = 637
-        scBeginingCash.SplitterWidth = 7
+        scBeginingCash.Size = New Size(768, 150)
+        scBeginingCash.SplitterDistance = 374
         scBeginingCash.TabIndex = 44
         ' 
         ' scCurrentCash
         ' 
         scCurrentCash.BackColor = SystemColors.ButtonHighlight
         scCurrentCash.BorderStyle = BorderStyle.Fixed3D
-        scCurrentCash.Location = New Point(1108, 884)
-        scCurrentCash.Margin = New Padding(5)
+        scCurrentCash.Location = New Point(652, 539)
         scCurrentCash.Name = "scCurrentCash"
         ' 
         ' scCurrentCash.Panel1
@@ -767,7 +805,7 @@ Partial Class Main_Form
         scCurrentCash.Panel1.Controls.Add(lblCCUSCashTraveler1)
         scCurrentCash.Panel1.Controls.Add(lblCCUSCashTraveler2)
         scCurrentCash.Panel1.Controls.Add(lblCurrentUSTraveler2)
-        scCurrentCash.Panel1.Controls.Add(lblCurrentUSraveler1)
+        scCurrentCash.Panel1.Controls.Add(lblCurrentUSTraveler1)
         ' 
         ' scCurrentCash.Panel2
         ' 
@@ -775,46 +813,44 @@ Partial Class Main_Form
         scCurrentCash.Panel2.Controls.Add(lblCCForeignCashTraveler2)
         scCurrentCash.Panel2.Controls.Add(lblCurrentFRNTraveler1)
         scCurrentCash.Panel2.Controls.Add(lblCCForeignCashTraveler1)
-        scCurrentCash.Size = New Size(1306, 246)
-        scCurrentCash.SplitterDistance = 653
-        scCurrentCash.SplitterWidth = 7
+        scCurrentCash.Size = New Size(768, 150)
+        scCurrentCash.SplitterDistance = 384
         scCurrentCash.TabIndex = 45
         ' 
         ' lblTripName
         ' 
         lblTripName.AutoSize = True
-        lblTripName.Font = New Font("Segoe UI", 26.0F, FontStyle.Bold)
-        lblTripName.Location = New Point(260, 115)
-        lblTripName.Margin = New Padding(5, 0, 5, 0)
+        lblTripName.Font = New Font("Segoe UI", 26F, FontStyle.Bold)
+        lblTripName.Location = New Point(153, 70)
         lblTripName.Name = "lblTripName"
-        lblTripName.Size = New Size(568, 116)
+        lblTripName.Size = New Size(340, 70)
         lblTripName.TabIndex = 46
         lblTripName.Text = "Place Holder"
         ' 
         ' btnCreditTransaction
         ' 
-        btnCreditTransaction.Location = New Point(1663, 107)
-        btnCreditTransaction.Margin = New Padding(5)
+        btnCreditTransaction.Location = New Point(978, 65)
         btnCreditTransaction.Name = "btnCreditTransaction"
-        btnCreditTransaction.Size = New Size(529, 56)
+        btnCreditTransaction.Size = New Size(311, 34)
         btnCreditTransaction.TabIndex = 47
         btnCreditTransaction.Text = "Credit/Debit Transaction"
         btnCreditTransaction.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(1163, 1241)
+        Button1.Location = New Point(684, 757)
+        Button1.Margin = New Padding(2, 2, 2, 2)
         Button1.Name = "Button1"
-        Button1.Size = New Size(189, 57)
+        Button1.Size = New Size(111, 35)
         Button1.TabIndex = 48
         Button1.Text = "Button1"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Main_Form
         ' 
-        AutoScaleDimensions = New SizeF(17.0F, 41.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(2508, 1310)
+        ClientSize = New Size(1475, 799)
         Controls.Add(Button1)
         Controls.Add(btnCreditTransaction)
         Controls.Add(lblTripName)
@@ -842,7 +878,6 @@ Partial Class Main_Form
         Controls.Add(lblTitle)
         Controls.Add(mnuStrip)
         MainMenuStrip = mnuStrip
-        Margin = New Padding(5)
         Name = "Main_Form"
         Text = "Travel Manager"
         GroupBox1.ResumeLayout(False)
@@ -893,7 +928,7 @@ Partial Class Main_Form
     Friend WithEvents lblCurrentFrnTraveler2 As Label
     Friend WithEvents lblCurrentFRNTraveler1 As Label
     Friend WithEvents lblCurrentUSTraveler2 As Label
-    Friend WithEvents lblCurrentUSraveler1 As Label
+    Friend WithEvents lblCurrentUSTraveler1 As Label
     Friend WithEvents lblCCForeignCashTraveler2 As Label
     Friend WithEvents lblCCForeignCashTraveler1 As Label
     Friend WithEvents lblCCUSCashTraveler2 As Label
