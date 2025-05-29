@@ -33,7 +33,7 @@
 
     Private Sub btnCreateTrip_Click(sender As Object, e As EventArgs) Handles btnCreateTrip.Click
 
-        Main_Form.lblTripName.Text = txtTripName.Text.Trim()
+        frmExpense.lblTripName.Text = txtTripName.Text.Trim()
 
         Try
             ' Validate inputs
